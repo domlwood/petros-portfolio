@@ -10,7 +10,7 @@ export const Loader = ({ children }: { children: ReactNode }) => {
     setTimeout(() => setLoading(false), 10);
   });
 
-  if(loading) return <AppLoader/>
+  if (loading) return <AppLoader />;
 
-  return <>{children}</>
+  return <>{children}</>;
 };
