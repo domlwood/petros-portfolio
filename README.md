@@ -4,6 +4,7 @@
 
 ## Prerequisites 
 >`npm i` - *install dependencies*
+
 >`npm t` - *run tests*
 
 >`npm start` - *start the app*

@@ -4,10 +4,14 @@
 
 :root {
   --black: #000;
-  --white: #fff
+  --black-accent: #0c0c0c;
+  --white: #fff;
+  --grey: #595959;
+  --accent: #e4a550;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: var(--black);
@@ -15,27 +19,61 @@ html, body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 64px;
+/* h1 {
+  font-size: 86px;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+} */
+
+h1 {
+  font-size: 86px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+}
+
+h5 {
+  font-size: 24px;
   font-weight: 400;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 60px;
 }
 
 section {
-  height: 100vh;
-  border-bottom: 1px solid white
+  min-height: 100vh;
+  padding: 60px 240px;
+  padding-right: 240px;
 }

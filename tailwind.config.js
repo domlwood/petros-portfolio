@@ -11,7 +11,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        black: '#000',
+        white: '#fff',
+        grey: '#595959',
+        blackAccent: '#0C0C0C',
+        accent: '#E4A550'
+      },
+      spacing: {
+        gap: '100px'
+      }
     },
   },
   plugins: [],

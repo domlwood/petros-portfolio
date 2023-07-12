@@ -1,15 +1,15 @@
 export const Intro = () => {
   return (
-    <section className="flex flex-col">
-      <div className="flex py-3 px-4">
-      <p>Petros Chantzopoulos</p>
-      </div>
-      <div className="flex flex-grow h-100 justify-center items-center text-center">
-        <h1 className="w-8/12">
-          Hi, I'm Petros, an interaction designer creating rich, meaningful
-          experiences by connecting design, technology & data.
-        </h1>
-      </div>
+    <section className="flex justify-center items-center">
+      <h1 className="w-full">
+        Hi, I'm <span className="text-underline">Petros</span>,
+        <br />
+        I’m an interaction designer, <br />a prototyper, a maker and <br />
+        an aspiring design writer. <br />I develop rich meaningful <br />
+        experiences by connecting
+        <br />
+        design, technology & data.
+      </h1>
     </section>
   );
 };
