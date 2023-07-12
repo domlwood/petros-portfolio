@@ -40,8 +40,9 @@ h4 {
 } */
 
 h1 {
-  font-size: 86px;
+  font-size: 96px;
   font-weight: 400;
+  line-height: 100px;
 }
 
 h2 {
