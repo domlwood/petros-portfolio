@@ -1,14 +1,13 @@
 export const Intro = () => {
   return (
     <section className="flex justify-center items-center">
-      <h1 className="w-full">
-        Hi, I'm <span className="underline underline-offset-8">Petros</span>
+      <h1 className="w-3/5">
+        Hi, I’m Petros
         <br />
-        I’m an interaction designer, <br />a prototyper, a maker and <br />
-        an aspiring design writer. <br />I develop rich meaningful <br />
-        experiences by connecting
         <br />
-        design, technology & data.
+        I’m an interaction designer, a prototyper, a maker and an aspiring design writer.
+        <br />
+        <br />I develop rich, meaningful experiences by connecting design, technology & data.
       </h1>
     </section>
   );

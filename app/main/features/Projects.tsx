@@ -2,17 +2,40 @@ import { ProjectCard } from '../ui/ProjectCard';
 
 export const Projects = () => {
   return (
-    <section className="flex flex-col gap-10 pb-10">
-      <div className="w-4/5 pb-gap">
-        <h3>Meanwhile...</h3>
-        <h4>
-          you can browse the following curated selection of projects I’ve done focused on strengthening my design skills
-          and sharpening my vision. some of the projects I’ve worked on
-        </h4>
+    <section className="flex flex-col gap-gap pb-10">
+      <div className="w-3/5">
+        <h1>Unfortunately, great designs cant always be made public.</h1>
+        <p className="pt-12">
+        If you would like to see my “secret” portfolio with some real life examples of my designs drop me an email at:
+          <br />
+          <br /> <span className='font-semibold'>petros.chantz [at] gmail [dot] com</span>
+        </p>
+
       </div>
-      <ProjectCard year="2022" title='testTitle' content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads" src="test" />
-      <ProjectCard year="2022" title='testTitle' content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads" src="test" />
-      <ProjectCard year="2022" title='testTitle' content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads" src="test" />
+      <div className="w-3/5 ml-auto">
+        <h1 className='text-right'>Meanwhile...</h1>
+        <p className="pt-12 text-right">
+        You can always browse the projects I’ve done in the past which helped me refine my design skills, challenged me to think about the project as a system and solidified my design language.  
+        </p>
+      </div>
+      <ProjectCard
+        year="2022"
+        title="testTitle"
+        content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads"
+        src="test"
+      />
+      <ProjectCard
+        year="2022"
+        title="testTitle"
+        content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads"
+        src="test"
+      />
+      <ProjectCard
+        year="2022"
+        title="testTitle"
+        content="lorem ipsum blahsads daksdj asdhisadjhk lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads lorem ipsum blahsads"
+        src="test"
+      />
     </section>
   );
 };

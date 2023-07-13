@@ -1,5 +1,3 @@
-import './AppLoader.scss';
-
 export const AppLoader = () => {
   return (
     <div className="h-screen flex justify-center items-center">
