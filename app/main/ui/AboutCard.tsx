@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export const AboutCard = ({ title, content, imgSrc }: { title: string; content: string; imgSrc: string }) => {
   return (
-    <div className="flex flex-col pb-12 gap-12">
+    <div className="flex flex-col gap-12 pb-12">
       <Image
         className="pb-12"
-        alt=""
+        alt={title}
         sizes="100%"
         src={imgSrc}
         width={0}

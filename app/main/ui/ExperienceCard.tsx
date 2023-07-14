@@ -1,9 +1,18 @@
 import Link from 'next/link';
-import { stringToKebab } from '../utils/stringToKebab';
 
-export const ExperienceCard = ({ dateRange, title, role }: { dateRange: string; title: string; role: string }) => {
+export const ExperienceCard = ({
+  dateRange,
+  title,
+  role,
+  href,
+}: {
+  dateRange: string;
+  title: string;
+  role: string;
+  href: string;
+}) => {
   return (
-    <Link href={`/${stringToKebab(title)}`} className="experience-card">
+    <Link href={`/blogs/${href}`} className="experience-card">
       <h4>{dateRange}</h4>
       <div>
         <h5>{title}</h5>
