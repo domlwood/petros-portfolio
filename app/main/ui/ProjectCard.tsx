@@ -13,7 +13,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <div className="flex">
-      <h2 className="px-5">{year}</h2>
+      <h1 className="px-5">{year}</h1>
       <p className="flex-1 py-4 pl-10 pr-4">
         <span className="font-bold">{title} - </span>
         {content}

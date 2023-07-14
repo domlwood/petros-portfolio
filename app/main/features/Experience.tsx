@@ -2,10 +2,10 @@ import { ExperienceCard } from '../ui/ExperienceCard';
 import { mdToProps } from '../utils/MdToProps';
 
 export const Experience = () => {
-  const experiences = mdToProps('app/blogs');
+  const experiences = mdToProps('app/blog');
 
   return (
-    <section>
+    <section id="experience">
       <h1 className="pb-12 text-center">In the past years I’ve worked at</h1>
       <div className="h-full gap-10 m-auto resp-grid">
         {experiences.map((e) => (

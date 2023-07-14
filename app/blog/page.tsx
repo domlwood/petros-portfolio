@@ -6,16 +6,6 @@ import { NavBar } from './ui/NavBar';
 
 export default async function MainPage() {
   return (
-    <>
-      <NavBar />
-      <Intro />
-      <div>
-        <About />
-      </div>
-        <Experience />
-      <div>
-        <Projects />
-      </div>
-    </>
+    <h1>blog page</h1>
   );
 }
