@@ -3,7 +3,7 @@ import { AboutCard } from '../ui/AboutCard';
 export const Info = () => {
   return (
     <section>
-      <div className="w-3/5">
+      <div className="resp-width pb-12">
         <AboutCard
           imgSrc="/placeholder.jpg"
           title={`I’m interested in the interactions that happen between the physical 
@@ -15,7 +15,7 @@ export const Info = () => {
             diverse projects and domains.`}
         />
       </div>
-      <div className="w-3/5 ml-auto text-right">
+      <div className="resp-width md:ml-auto md:text-right pt-12">
         <AboutCard
           imgSrc="/placeholder.jpg"
           title={`"Show me, don't tell me" mindset.`}

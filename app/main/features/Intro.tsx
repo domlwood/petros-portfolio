@@ -1,7 +1,7 @@
 export const Intro = () => {
   return (
-    <section className="flex justify-center items-center">
-      <h1 className="w-3/5">
+    <section className="flex items-center justify-center">
+      <h1 className="resp-width">
         Hi, I’m Petros
         <br />
         <br />

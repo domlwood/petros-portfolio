@@ -1,6 +1,9 @@
+import Link from 'next/link';
+import { stringToKebab } from '../utils/stringToKebab';
+
 export const ExperienceCard = ({ dateRange, title, role }: { dateRange: string; title: string; role: string }) => {
   return (
-    <div className="flex flex-col h-96 p-5	 bg-blackAccent justify-between">
+    <Link href={`/${stringToKebab(title)}`} className="experience-card">
       <h4>{dateRange}</h4>
       <div>
         <h5>{title}</h5>
@@ -12,6 +15,6 @@ export const ExperienceCard = ({ dateRange, title, role }: { dateRange: string; 
           <h5>Read more →</h5>
         </button>
       </div>
-    </div>
+    </Link>
   );
 };

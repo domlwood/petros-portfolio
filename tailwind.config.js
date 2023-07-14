@@ -16,10 +16,14 @@ module.exports = {
         white: '#fff',
         grey: '#595959',
         blackAccent: '#0C0C0C',
-        accent: '#E4A550'
+        accent: '#E4A550',
+        orange: '#F2A33C'
       },
       spacing: {
         gap: '100px'
+      },
+      height: {
+        card: '500px'
       }
     },
   },
