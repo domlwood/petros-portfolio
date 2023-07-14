@@ -1,5 +1,5 @@
 import { About } from './features/About';
-import { Experience } from './features/Experience';
+import { WorkExperience } from './features/Experience';
 import { Intro } from './features/Intro';
 import { NavBar } from './ui/NavBar';
 import { Projects } from './features/Projects';
@@ -12,7 +12,7 @@ export default async function MainPage() {
       <div>
         <About />
       </div>
-      <Experience />
+      <WorkExperience />
       <div>
         <Projects />
       </div>
