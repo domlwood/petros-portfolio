@@ -1,7 +1,7 @@
 import { ExperienceCard } from '../ui/ExperienceCard';
 import { mdToProps } from '../utils/MdToProps';
 
-export const WorkExperience = () => {
+export const Experience = () => {
   const experiences = mdToProps('app/blog');
 
   return (
