@@ -16,7 +16,7 @@
 
 @layer base {
   section {
-    @apply lg:px-[60px] lg:py-[100px] p-[20px] min-h-screen;
+    @apply lg:px-[100px] lg:py-[60px] p-[20px] min-h-screen;
   }
   html,
   body {
