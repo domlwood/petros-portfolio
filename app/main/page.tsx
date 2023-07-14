@@ -1,8 +1,8 @@
-import { Experience } from './features/Experience';
 import { About } from './features/About';
+import { Experience } from './features/Experience';
 import { Intro } from './features/Intro';
-import { Projects } from './features/Projects';
 import { NavBar } from './ui/NavBar';
+import { Projects } from './features/Projects';
 
 export default async function MainPage() {
   return (
@@ -12,7 +12,7 @@ export default async function MainPage() {
       <div>
         <About />
       </div>
-        <Experience />
+      <Experience />
       <div>
         <Projects />
       </div>
