@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const currentLink = window?.location?.hash;
+  const currentLink = window && window.location.hash ? window.location.hash : null;
   const links = [
     {
       name: 'about',
