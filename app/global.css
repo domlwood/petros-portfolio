@@ -7,10 +7,13 @@
     @apply flex flex-col justify-between p-5 text-white h-card hover:bg-orange hover:text-black bg-blackAccent;
   }
   .resp-width {
-    @apply lg:w-3/5 md:w-4/5 sm:w-full;
+    @apply w-full lg:w-4/5;
   }
-  .resp-grid {
+  .resp-grid-4 {
     @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4;
+  }
+  .resp-grid-2 {
+    @apply grid grid-cols-1 lg:grid-cols-2;
   }
   .btn {
     @apply px-6 py-2 rounded bg-blackAccent hover:bg-orange hover:text-black;
@@ -19,20 +22,20 @@
 
 @layer base {
   section {
-    @apply lg:px-[100px] lg:py-[60px] p-[20px] min-h-screen;
+    @apply lg:px-[225px] lg:py-[60px] p-[30px] min-h-screen;
   }
   html,
   body {
     @apply w-screen min-h-screen overflow-x-hidden text-white bg-black;
   }
   h1 {
-    @apply font-medium leading-tight text-7xl;
+    @apply font-medium leading-snug text-7xl;
   }
   h2 {
     @apply text-4xl font-semibold;
   }
   p,
   a {
-    @apply text-3xl font-normal leading-[60px];
+    @apply text-3xl font-normal leading-snug;
   }
 }

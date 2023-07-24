@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 export const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const currentLink = window && window.location.hash ? window.location.hash : null;
   const links = [
     {
       name: 'about',
@@ -34,7 +33,7 @@ export const NavBar = () => {
     <div className="fixed flex flex-col justify-between w-screen h-screen text-right backdrop-blur bg-black/60">
       <div>
         <Image
-          className="ml-auto"
+          className="ml-auto cursor-pointer"
           alt=""
           width={132}
           height={132}
@@ -45,19 +44,19 @@ export const NavBar = () => {
           <h2 className="pb-5">Petros Chantzopoulos</h2>
           <p className="leading-10">petros.chantz [at] gmail [dot] com</p>
           <p className="leading-10">+31 XXXXXXXX XXX</p>
-          <a className="leading-10">LinkedIn</a>
+          <a className="leading-10" href="https://www.linkedin.com/in/petroschantz/">LinkedIn</a>
         </div>
       </div>
       <div className="p-[100px]">
         {links.map((link) => (
           <Link scroll={false} key={link.href} onClick={() => setOpen(false)} href={link.href}>
-            <h1 className={link.href === currentLink ? 'text-orange' : 'text-white'}>{link.name}</h1>
+            <h1 className={true ? 'text-orange' : 'text-white'}>{link.name}</h1>
           </Link>
         ))}
       </div>
     </div>
   ) : (
-    <div className="fixed top-0 right-0 text-right">
+    <div className="fixed top-0 right-0 text-right cursor-pointer">
       <Image width={132} height={132} alt="" onClick={() => setOpen(true)} src="/open-nav.svg" />
     </div>
   );

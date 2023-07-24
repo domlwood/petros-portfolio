@@ -12,16 +12,16 @@ export const ExperienceCard = ({
   href: string;
 }) => {
   return (
-    <Link href={`/blog/${href}`} className="experience-card">
+    <Link href={{ pathname: `/blog/experiences/${href}` }} className="experience-card">
       <h4>{dateRange}</h4>
       <div>
-        <h5>{title}</h5>
-        <p>{role}</p>
+        <h4>{title}</h4>
+        <h3 className='font-semibold'>{role}</h3>
       </div>
       <div>
         <hr />
         <button className="mt-2">
-          <h5>Read more →</h5>
+          <p>Read more →</p>
         </button>
       </div>
     </Link>

@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Markdown from 'markdown-to-jsx';
 
-import { readAndCleanMd } from '../../main/utils/ReadAndCleanMd';
+import { readAndCleanMd } from '../../../main/utils/ReadAndCleanMd';
 
 export default async function BlogPage({ params }: { params: { id: string }}) {  
-  const content = readAndCleanMd(`app/blog/${params.id}.md`);
+  const content = readAndCleanMd(`app/blog/projects/${params.id}.md`);
   return (
     <section>
       <Markdown className="pb-12">{content}</Markdown>
-      <Link className="btn" href="/">back →</Link>
+      <Link className="btn" href="/">← back</Link>
     </section>
   );
 }

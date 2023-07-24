@@ -1,31 +1,19 @@
 import Image from 'next/image';
 
-export const ProjectCard = ({
-  year,
-  title,
-  content,
-  src,
-}: {
-  year: string;
-  title: string;
-  content: string;
-  src: string;
-}) => {
+export const ProjectCard = ({ title, subtitle, href }: { title: string; subtitle: string; href: string }) => {
   return (
-    <div className="flex">
-      <h1 className="px-5">{year}</h1>
-      <p className="flex-1 py-4 pl-10 pr-4">
-        <span className="font-bold">{title} - </span>
-        {content}
-      </p>
+    <div className="flex flex-col">
       <Image
         alt=""
         sizes="100%"
-        src="/placeholder.jpg"
+        src={`/projects/${href}.jpg`}
         width={0}
         height={0}
-        style={{ width: '330px', height: 'auto' }}
+        style={{ width: '100%', height: 'auto' }}
       />
+      <h2 className="pt-12 font-medium">{title}</h2>
+      <p className="py-8">{subtitle}</p>
+        <a href={`/blog/projects/${href}`} className="ml-auto text-orange">Read more →</a>
     </div>
   );
 };
