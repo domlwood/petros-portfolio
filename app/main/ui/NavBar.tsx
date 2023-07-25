@@ -25,7 +25,7 @@ export const NavBar = () => {
     },
     {
       name: 'blog',
-      href: '/blog',
+      href: 'blog',
     },
   ];
 
@@ -40,17 +40,17 @@ export const NavBar = () => {
           onClick={() => setOpen(false)}
           src="/close-nav.svg"
         />
-        <div className="px-[100px]">
+        <div className="pr-12 md:pr-[100px]">
           <h2 className="pb-5">Petros Chantzopoulos</h2>
           <p className="leading-10">petros.chantz [at] gmail [dot] com</p>
           <p className="leading-10">+31 XXXXXXXX XXX</p>
           <a className="leading-10" href="https://www.linkedin.com/in/petroschantz/">LinkedIn</a>
         </div>
       </div>
-      <div className="p-[100px]">
+      <div className="pr-12 md:pr-[100px] leading-tight pb-12">
         {links.map((link) => (
-          <Link scroll={false} key={link.href} onClick={() => setOpen(false)} href={link.href}>
-            <h1 className={true ? 'text-orange' : 'text-white'}>{link.name}</h1>
+          <Link passHref scroll={false} key={link.href} onClick={() => setOpen(false)} href={link.href}>
+            <h1 className={'text-orange leading-tight'}>{link.name}</h1>
           </Link>
         ))}
       </div>
