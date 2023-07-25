@@ -9,7 +9,7 @@ export const generateStaticParams = async () => {
 };
 
 export default async function BlogPage({ params }: { params: { id: string } }) {
-  const content = readAndCleanMd(`app/blog/${params.id}.md`);
+  const content = readAndCleanMd(`app/blog/${params.id}`);
 
   return (
     <section>

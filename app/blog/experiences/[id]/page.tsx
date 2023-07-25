@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import Markdown from 'markdown-to-jsx';
 
+import { getStaticPaths } from '../../../main/utils/GetStaticPaths';
 import { readAndCleanMd } from '../../../main/utils/ReadAndCleanMd';
 
 export const generateStaticParams = async () => {
-  return [{id: 'aps-group'}];
+  return getStaticPaths(`app/blog/experiences`);
 };
 
-export default async function ExperienceBlogPage({ params }: { params: any }) {
-  const content = readAndCleanMd(`app/blog/experiences/${params.id}.md`);
+export default async function ExperienceBlogPage({ params }: { params: { id: string } }) {
+  const content = readAndCleanMd(`app/blog/experiences/${params.id}`);
   return (
     <section>
       <Markdown className="pb-12">{content}</Markdown>
