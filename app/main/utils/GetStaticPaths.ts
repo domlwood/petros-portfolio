@@ -5,5 +5,5 @@ export const getStaticPaths = (dir: string) =>
     .readdirSync(dir)
     .filter((file) => file.endsWith('.md'))
     .map((file) => {
-      return { id: file };
+      return { id: file.replace('.md', '') };
     });
