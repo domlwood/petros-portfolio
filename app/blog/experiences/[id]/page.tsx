@@ -9,7 +9,7 @@ export const generateStaticParams = async () => {
 };
 
 export default async function ExperienceBlogPage({ params }: { params: { id: string } }) {
-  const content = readAndCleanMd(`app/blog/experiences/${params.id}`);
+  const content = readAndCleanMd(`app/blog/experiences/${params.id}.md`);
   return (
     <section>
       <Markdown className="pb-12">{content}</Markdown>
